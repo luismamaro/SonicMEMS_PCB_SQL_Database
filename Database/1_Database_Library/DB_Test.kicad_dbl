@@ -1,0 +1,729 @@
+{
+    "meta": {
+        "version": 0
+    },
+    "name": "My Database Library",
+    "description": "A database of electronic components for KiCAD",
+    "source": {
+        "type": "odbc",
+        "dsn": "",
+        "username": "",
+        "password": "",
+        "timeout_seconds": 2,
+        "connection_string": "Driver={SQLite3 ODBC Driver};Database=${CWD}/TestDatabase.sqlite"
+    },
+    "libraries": [
+	  {
+        "name": "Capacitors",
+        "table": "Capacitors",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Capacitance",
+            "name": "Capacitance",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Dielectric",
+            "name": "Dielectric",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Voltage",
+            "name": "Voltage",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Connectors",
+        "table": "Connectors",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Devices",
+        "table": "Devices",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Diodes",
+        "table": "Diodes",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Fwd_Voltage",
+            "name": "Fwd_Voltage",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "ICs",
+        "table": "ICs",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "ICs_SonicMEMS",
+        "table": "ICs_SonicMEMS",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Inductors",
+        "table": "Inductors",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Inductance",
+            "name": "Inductance",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Current_Rating",
+            "name": "Current_Rating",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Misc",
+        "table": "Misc",
+        "key": "Net_Name",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "Net_Name",
+            "name": "Value",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Resistors",
+        "table": "Resistors",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Resistance",
+            "name": "Resistance",
+            "visible_on_add": true,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Switches",
+        "table": "Switches",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      },
+	  {
+        "name": "Transistors",
+        "table": "Transistors",
+        "key": "MPN",
+        "symbols": "Symbol",
+        "footprints": "Footprint",
+        "fields": [
+          {
+            "column": "MPN",
+            "name": "MPN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "DigiKey_PN",
+            "name": "DigiKey_PN",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+		  {
+            "column": "Manufacturer",
+            "name": "Manufacturer",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Symbol",
+            "name": "Symbol",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Footprint",
+            "name": "Footprint",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          },
+          {
+            "column": "Datasheet",
+            "name": "Datasheet",
+            "visible_on_add": false,
+            "visible_in_chooser": false,
+            "show_name": false,
+            "inherit_properties": false
+          }
+        ],
+        "properties": {
+          "description": "Description",
+          "footprint_filters": "footprint_filters",
+          "keywords": "Keywords",
+          "exclude_from_bom": "exclude_from_bom",
+          "exclude_from_board": "exclude_from_board"
+        }
+      }
+   ]
+}
