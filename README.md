@@ -17,8 +17,9 @@
 4. Boot up KiCAD
 5. On the main page select Preferences->Configure Paths
    5a. On this window add a path called "KICAD10_MAIN_DIR" with Path pointing to where you stored the KiCAD folder
+   5b. Define another Path called "KICAD10_3DMODEL_DIR" with path pointing to ./Database/4_3DStep
    5b. Close KiCAD directly after and reopen
-6. On the main window go to Preferences->Manage Symbol Libraries
+7. On the main window go to Preferences->Manage Symbol Libraries
    6a. Add a global library with the "+" button.
    nickname="SonicMEMS Database"
    library path="${KICAD10_MAIN_DIR}/Database/1_Database_Library/DB_Test.kicad_dbl"
@@ -31,8 +32,8 @@
 
    6c. Continue step 6b for every file within the "2_sybmols" Folder
 
-7. Exit out of the manage symbol library and go to main window
-8. On the main window go to Preferences->Manage Footprint Libraries.
+8. Exit out of the manage symbol library and go to main window
+9. On the main window go to Preferences->Manage Footprint Libraries.
    8a. Add a global library with the "+" button.
    nickname="Capacitors"
    library path="${KICAD10_MAIN_DIR}/Database/1_Database_Library/Capactiors.kicad_dbl"
@@ -40,7 +41,7 @@
 
    8b. Continue step 8b for every folder name within the "3_footprints" Folder.
 
-9. All done! As long as you do not wish to add any components/symbols/footprints
+10. All done! As long as you do not wish to add any components/symbols/footprints
 
 # Adding component to database assuming reused symbol/footprint
 1. If you want add a component while reusing a symbol and footprint then thats easy!
@@ -74,6 +75,6 @@
 2. Grab the 3D model you downloaded and place it into ${KICAD10_MAIN_DIR}/Database/4_3DStep/
 3. Open the footprint in Footprint editor and click "Footprint Properties"
    3a. Once open, go to the 3D Model tab.
-   3b. IMPORTANT!: Enter the path to the 3D model but you must use the ${KICAD10_MAIN_DIR} variale when defining the full path. If you do not use this then it will not work for everyone else.
+   3b. IMPORTANT!: Enter the path to the 3D model but you must use the ${KICAD10_3DMODEL_DIR} variale when defining the full path. If you do not use this then it will not work for everyone else.
    3c. Adjust the 3D model scale/offset as needed.
 4. Hit OK and all done!
