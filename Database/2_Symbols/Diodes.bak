@@ -3,8 +3,11 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "LED_Filled"
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0)
+			(offset 0.254)
 			(hide yes)
 		)
 		(exclude_from_sim no)
