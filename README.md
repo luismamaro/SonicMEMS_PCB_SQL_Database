@@ -68,3 +68,12 @@
    3a. Likely you can just download the footprint for online and upload it here instead of making your own.
    3b. Grab the name of the footprint and that will be used when inside of SQLite
 4. Open SQLite and perform the earlier section but with the names for the Symbol and Footprint columns
+
+# Adding 3D Model (REQUIRED IF ADDING FOOTPRINT)
+1. If you addded a footprint then you must also include a 3D model. This is simple.
+2. Grab the 3D model you downloaded and place it into ${KICAD10_MAIN_DIR}/Database/4_3DStep/
+3. Open the footprint in Footprint editor and click "Footprint Properties"
+   3a. Once open, go to the 3D Model tab.
+   3b. IMPORTANT!: Enter the path to the 3D model but you must use the ${KICAD10_MAIN_DIR} variale when defining the full path. If you do not use this then it will not work for everyone else.
+   3c. Adjust the 3D model scale/offset as needed.
+4. Hit OK and all done!
